@@ -26,18 +26,24 @@ public class LottoPicker {
         int numberOfNumbersGenerate = 0;
         int total = 5;
 
-        int[] numberStored;
+        int[] numberStored = new int[5];
+        int x = numberStored.length;
 
         //numberOfNumbersGenerate < total
         //needs to be a statement that evaluate to true or false
         while(numberOfNumbersGenerate < total) {
             int randomNumber = random.nextInt(30);
-            System.out.println(randomNumber);
-            numberStored[] = numberOfNumbersGenerate;
+            //System.out.println(randomNumber);
+            numberStored[numberOfNumbersGenerate] = randomNumber;
+
+            if(numberStored[numberOfNumbersGenerate] != randomNumber) {
+                numberStored[numberOfNumbersGenerate] = randomNumber;
+            };
+
+            System.out.println(numberStored[numberOfNumbersGenerate]);
             numberOfNumbersGenerate = numberOfNumbersGenerate + 1;
         };
 
-        System.out.println(numberStored[0]);
 
 
         /*
