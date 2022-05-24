@@ -34,7 +34,6 @@ public class LottoPicker {
         while(numberOfNumbersGenerate < total) {
             int randomNumber = random.nextInt(30);
             //System.out.println(randomNumber);
-            numberStored[numberOfNumbersGenerate] = randomNumber;
 
             if(numberStored[numberOfNumbersGenerate] != randomNumber) {
                 numberStored[numberOfNumbersGenerate] = randomNumber;
